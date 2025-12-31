@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>0xabhi · Blogs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#121212',
+            panel: '#1a1a1a',
+            accent: '#10b981',
+            muted: '#b3b3b3'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-bg text-white font-sans">
+
+<div class="min-h-screen flex flex-col md:flex-row">
+
+  <!-- Sidebar -->
+  <aside class="md:fixed md:w-1/4 w-full md:h-screen bg-panel p-8 text-center border-b md:border-r border-white/10">
+    <div class="w-28 h-28 rounded-full bg-gray-700 mx-auto mb-4"></div>
+    <h1 class="text-xl font-bold">0xabhi</h1>
+    <p class="text-sm text-muted mt-2 italic">Living life in the terminal.</p>
+  </aside>
+
+  <!-- Content -->
+  <main class="md:ml-[25%] w-full md:w-3/4 px-6 md:px-12 py-10">
+
+    <nav class="flex justify-end gap-6 text-sm text-muted mb-16">
+      <a href="index.html" class="hover:text-accent">Home</a>
+      <a href="blogs.html" class="hover:text-accent">Blogs</a>
+      <a href="contact.html" class="hover:text-accent">Contact Me</a>
+    </nav>
+
+    <h2 class="text-3xl font-bold mb-12">Recent Posts</h2>
+
+    <article class="mb-12">
+      <h3 class="text-2xl font-bold text-sky-400">Privilege Escalation Through Misconfigurations</h3>
+      <p class="text-sm text-muted mt-1">March 2025 • 7 min read</p>
+      <p class="text-muted mt-3">
+        An analysis of common privilege escalation paths discovered during internal
+        assessments, focusing on overlooked configurations...
+      </p>
+    </article>
+
+    <article class="mb-12">
+      <h3 class="text-2xl font-bold text-sky-400">Designing Effective SIEM Detections</h3>
+      <p class="text-sm text-muted mt-1">February 2025 • 6 min read</p>
+      <p class="text-muted mt-3">
+        Exploring detection engineering techniques based on attacker behavior rather
+        than noisy signatures...
+      </p>
+    </article>
+
+  </main>
+</div>
+
+</body>
+</html>
